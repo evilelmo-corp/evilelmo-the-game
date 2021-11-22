@@ -1,4 +1,5 @@
 import pygame as pg,numpy as np
+
 tilewall = pg.image.load('Images\H9kT6.jpg')
 tilewall = pg.transform.scale(tilewall, (15,15))
 map1 ="""                             
@@ -17,8 +18,10 @@ w   wwwwww www wwww     w   w
 w     w              ww w   w
 w                           w
 wwwwwwwwwwwwwwwwwwwwwwwwwwwww"""
+
 map1.splitlines()
 mapa1 = list()
+
 for line in map1.split("\n"):
     lista = list()
     for c in line:
@@ -27,4 +30,5 @@ for line in map1.split("\n"):
         else:
             lista.append(0)
     mapa1.append(lista)
+    
 mapa1 = np.array(mapa1)
