@@ -12,7 +12,7 @@ width,height = size
 black = (0,0,0)
 pg.display.set_caption("Juego Héctor")
 clock = pg.time.Clock()
-elmo = pg.image.load('Images\evilelmo.png')
+elmo = pg.image.load('images\evilelmo.png')
 elmo = pg.transform.scale(elmo, (50,43))
 elmorect = elmo.get_rect()
 

@@ -1,6 +1,6 @@
 import pygame as pg,numpy as np 
 
-tilewall = pg.image.load('Images\H9kT6.jpg')
+tilewall = pg.image.load('images\H9kT6.jpg')
 tilewall = pg.transform.scale(tilewall, (15,15))
 map1 ="""                             
                              
